@@ -1,0 +1,47 @@
+{
+  "plugin_type": "extractors",
+  "name": "tap-openweathermap",
+  "namespace": "tap_openweathermap",
+  "variant": "matatika",
+  "label": "OpenWeatherMap",
+  "docs": "https://www.matatika.com/data-details/tap-openweathermap/",
+  "repo": "https://github.com/Matatika/tap-openweathermap",
+  "pip_url": "git+https://github.com/Matatika/tap-openweathermap.git",
+  "description": "OpenWeatherMap is a service that provides weather data and forecasts for various locations around the world.\n\nOpenWeatherMap offers a range of weather data and forecast services for developers, businesses, and individuals. The service provides real-time and historical weather data, as well as 5-day and 16-day weather forecasts for any location in the world. The data includes temperature, humidity, wind speed and direction, precipitation, and more. OpenWeatherMap also offers APIs and tools for developers to integrate weather data into their applications and websites. The service is used by a variety of industries, including agriculture, transportation, energy, and tourism, to make informed decisions based on weather conditions.\n### Prerequisites\nTo obtain an API Key, the user must create an account on the OpenWeatherMap website and generate a unique API Key.\n\nTo obtain the Current Weather City Name, the user must know the name of the city for which they want to retrieve the weather data.\n\nTo obtain the Forecast Weather Longitude and Latitude, the user must know the longitude and latitude coordinates of the location for which they want to retrieve the weather forecast data. This can be obtained through various means such as using a map application or searching for the coordinates online.",
+  "logo_url": "https://app.matatika.com/assets/logos/extractors/openweathermap.png",
+  "capabilities": [
+    "catalog",
+    "discover",
+    "state"
+  ],
+  "settings": [
+    {
+      "name": "api_key",
+      "kind": "password",
+      "label": "API Key",
+      "description": "A unique identifier used to authenticate and authorize access to the OpenWeatherMap API",
+      "protected": false
+    },
+    {
+      "name": "current_weather_city_name",
+      "kind": "string",
+      "label": "Current Weather City Name",
+      "description": "The name of the city for which current weather data is requested",
+      "protected": false
+    },
+    {
+      "name": "forecast_weather_longitude",
+      "kind": "string",
+      "label": "Forecast Weather Longitude",
+      "description": "The longitude of the location for which forecast weather data is requested",
+      "protected": false
+    },
+    {
+      "name": "forecast_weather_lattitude",
+      "kind": "string",
+      "label": "Forecast Weather Latitude",
+      "description": "The latitude of the location for which forecast weather data is requested",
+      "protected": false
+    }
+  ]
+}
